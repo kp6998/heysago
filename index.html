@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Under Construction</title>
@@ -60,37 +58,7 @@
             padding: 20px;
             border-radius: 10px;
             margin-top: 30px;
-        }
-
-        .wave {
-            position: relative;
-            height: 50px;
-            width: 100%;
-            background: #252839;
-            margin-top: -10px;
-        }
-
-        .wave::before,
-        .wave::after {
-            content: "";
-            display: block;
-            position: absolute;
-            border-radius: 100% 50%;
-            background: #252839;
-        }
-
-        .wave::before {
-            top: 15px;
-            left: 10%;
-            right: 10%;
-            height: 80px;
-        }
-
-        .wave::after {
-            bottom: 10px;
-            left: 20%;
-            right: 20%;
-            height: 60px;
+            animation: workerAnimation 3s infinite ease-in-out;
         }
 
         @media (max-width: 600px) {
@@ -107,22 +75,12 @@
                 height: 100px;
                 margin-bottom: 20px;
             }
-
-            .wave::before {
-                top: 10px;
-                height: 50px;
-            }
-
-            .wave::after {
-                bottom: 5px;
-                height: 40px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="coming-soon-container">
-        <iframe class="construction-worker" src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <img class="construction-worker" src="fxVE.gif" width="480" height="360" frameborder="0" allowfullscreen="">
         <h1>Website Under Construction</h1>
         <p>We are working on something awesome! Stay tuned for our new website.</p>
         <div class="code-snippet">
@@ -137,6 +95,7 @@
             </code>
         </div>
     </div>
-    <div class="wave"></div>
+
+
 </body>
 </html>
