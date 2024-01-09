@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Under Construction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #252839;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://i.pinimg.com/originals/30/b8/17/30b8174c6f1a07e0af9bcf41fec3a5f5.gif') center/cover no-repeat;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #61dafb;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .construction-worker {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 30px;
+            animation: workerAnimation 2s infinite ease-in-out;
+        }
+
+        @keyframes workerAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .code-snippet {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            overflow: auto;
+            color: #61dafb;
+        }
+
+        .coming-soon-container {
+            background-color: #000000ab;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .wave {
+            position: relative;
+            height: 50px;
+            width: 100%;
+            background: #252839;
+            margin-top: -10px;
+        }
+
+        .wave::before,
+        .wave::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            background: #252839;
+        }
+
+        .wave::before {
+            top: 15px;
+            left: 10%;
+            right: 10%;
+            height: 80px;
+        }
+
+        .wave::after {
+            bottom: 10px;
+            left: 20%;
+            right: 20%;
+            height: 60px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .construction-worker {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+
+            .wave::before {
+                top: 10px;
+                height: 50px;
+            }
+
+            .wave::after {
+                bottom: 5px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <iframe class="construction-worker" src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <h1>Website Under Construction</h1>
+        <p>We are working on something awesome! Stay tuned for our new website.</p>
+        <div class="code-snippet">
+            <code>
+                &lt;!-- Coming Soon --&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;Website Under Construction&lt;/h1&gt;<br>
+                &lt;p&gt;We are working on something awesome! Stay tuned for our new website.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </div>
+    </div>
+    <div class="wave"></div>
+</body>
+</html>
